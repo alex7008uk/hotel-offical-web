@@ -16,12 +16,12 @@ export function Nav() {
       <nav className="navPc">
         <ul>
           <li>
-            <NavLink to="/">
+            <NavLink to="/hotel-offical-web/">
               <HotelSVG />
             </NavLink>
           </li>
           <li>
-            <NavLink to="/">旅館介紹</NavLink>
+            <NavLink to="/hotel-offical-web/">旅館介紹</NavLink>
           </li>
           <li>
             <NavLink to="/roomType">房型介紹</NavLink>
@@ -41,7 +41,7 @@ export function Nav() {
         {isShow && (
           <ul>
             <li>
-              <NavLink to="/" onClick={click}>
+              <NavLink to="/hotel-offical-web/" onClick={click}>
                 旅館介紹
               </NavLink>
             </li>
