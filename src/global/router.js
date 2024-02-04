@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
     element: <Nav />,
     children: [
       {
-        path: "/",
+        path: "/hotel-offical-web",
         element: <PageIntro />,
       },
       {
