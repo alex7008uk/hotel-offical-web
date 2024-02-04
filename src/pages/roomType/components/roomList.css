@@ -1,0 +1,68 @@
+ul {
+    color: #7389ae;
+}
+
+li h2 {
+    font-size: 1.5rem;
+    color: #416788;
+}
+
+li p {
+    font-size: 1.1rem;
+}
+
+li img {
+    width: 40rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    -webkit-user-drag: none;
+}
+
+li img:hover {
+    opacity: 0.5;
+}
+
+.textArea {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.iconCard {
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconCard span {
+    margin-top: 1rem;
+}
+
+.roomBtn {
+    width: 30%;
+    height: 2.5rem;
+    margin: 0.5rem 2rem 0 2rem;
+    border: 0px;
+    background-color: #416788;
+    color: #E0E0E2;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.roomBtn:hover {
+    background-color: #81d2c7;
+    color: #416788;
+}

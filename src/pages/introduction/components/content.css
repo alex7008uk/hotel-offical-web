@@ -1,0 +1,53 @@
+.content {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+section h2 {
+    margin: 2rem 0rem;
+    color: #416788;
+    text-shadow: 1px 1px 2px #7389ae;
+}
+
+section p {
+    padding: 0rem 3rem;
+    color: #7389ae;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.article1 section:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.article1 img {
+    width: 40rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.article1 section div {
+    width: 40rem;
+}
+
+.article2 section div {
+    width: 70rem;
+}
+
+.article2 section h2 {
+    text-align: left;
+}
+
+.article2 section p {
+    padding: 0;
+    text-align: left;
+}

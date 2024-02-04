@@ -1,0 +1,23 @@
+.btnTop {
+    position: fixed;
+    right: 4rem;
+    bottom: 4rem;
+    background: none;
+    border: 0;
+    font-size: 3.5rem;
+    color: #416788;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.btnTop:hover {
+    color: #7389ae;
+}
+
+@media (max-width: 480px) {
+    .btnTop {
+        right: 1rem;
+        bottom: 1rem;
+        opacity: 0.5;
+    }
+}
