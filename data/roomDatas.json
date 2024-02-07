@@ -7,7 +7,7 @@
         "num": 2,
         "bed": "一大床",
         "squareSize": 12,
-        "src": "hotel-offical-web/images/room/doubleRoom.png"
+        "src": "/hotel-offical-web/images/room/doubleRoom.png"
       },
       {
         "id": "2",
@@ -16,7 +16,7 @@
         "num": 2,
         "bed": "一大床",
         "squareSize": 12,
-        "src": "hotel-offical-web/images/room/doubleRoomJP.png"
+        "src": "/hotel-offical-web/images/room/doubleRoomJP.png"
       },
       {
         "id": "3",
@@ -25,7 +25,7 @@
         "num": 4,
         "bed": "兩大床",
         "squareSize": 19,
-        "src": "hotel-offical-web/images/room/quadrupleRoom.png"
+        "src": "/hotel-offical-web/images/room/quadrupleRoom.png"
       },
       {
         "id": "4",
@@ -34,7 +34,7 @@
         "num": 4,
         "bed": "兩大床",
         "squareSize": 19,
-        "src": "hotel-offical-web/images/room/quadrupleRoomJP.png"
+        "src": "/hotel-offical-web/images/room/quadrupleRoomJP.png"
       }
     ]
 }
