@@ -8,19 +8,27 @@ import "./roomList.css";
 
 export function RoomList({ roomType }) {
   const [roomData, setRoom] = useState([]);
+  const roomprocess =
+    roomType === 1
+      ? roomData
+      : roomData.filter((item) => item.type === roomType);
+
+  // console.log(`${API_HOST}/roomDatas.json`);
 
   useEffect(() => {
-    fetch(`${API_HOST}/roomDatas${roomType === 1 ? "" : `?type=${roomType}`}`)
+    fetch(`${API_HOST}/roomDatas.json`)
       .then((res) => res.json())
       .then((data) => {
-        setRoom(data);
+        const { roomDatas } = data;
+        // console.log(roomDatas);
+        setRoom(roomDatas);
       });
-  }, [roomType]);
+  }, []);
 
   return (
     <>
       <ul>
-        {roomData.map((room) => {
+        {roomprocess.map((room) => {
           return (
             <li key={room.id}>
               <img src={room.src} alt="pic" />

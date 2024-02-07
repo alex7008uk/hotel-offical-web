@@ -24,13 +24,13 @@ export function Nav() {
             <NavLink to="/hotel-offical-web/">旅館介紹</NavLink>
           </li>
           <li>
-            <NavLink to="/roomType">房型介紹</NavLink>
+            <NavLink to="/roomType/">房型介紹</NavLink>
           </li>
           <li>
-            <NavLink to="/services">設施介紹</NavLink>
+            <NavLink to="/services/">設施介紹</NavLink>
           </li>
           <li>
-            <NavLink to="/services">訂房系統</NavLink>
+            <NavLink to="/services/">訂房系統</NavLink>
           </li>
         </ul>
       </nav>
@@ -46,17 +46,17 @@ export function Nav() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/roomType" onClick={click}>
+              <NavLink to="/roomType/" onClick={click}>
                 房型介紹
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" onClick={click}>
+              <NavLink to="/services/" onClick={click}>
                 設施介紹
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" onClick={click}>
+              <NavLink to="/services/" onClick={click}>
                 訂房系統
               </NavLink>
             </li>

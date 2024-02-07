@@ -4,7 +4,7 @@
 
 使用 React 框架去實作一個響應式的旅館網站，並用 JSON Server 模擬 RESTful API 運作的情形。
 
-網址:
+網址: https://alex7008uk.github.io/hotel-offical-web/
 
 主要實作功能如下:
 

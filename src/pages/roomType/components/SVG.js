@@ -2,8 +2,8 @@ export function NumSVG() {
   return (
     <svg
       class="icon"
-      width="3rem"
-      height="3rem"
+      width="3.5rem"
+      height="3.5rem"
       viewBox="0 0 1024 1024"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
