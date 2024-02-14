@@ -4,11 +4,20 @@ import { Banner } from "../../components/banner.js";
 import { BtnList } from "../../components/btnList.js";
 import { RoomList } from "./components/roomList.js";
 import { TopBtn } from "../../components/topBtn.js";
+import { API_HOST } from "../../global/urlAPI.js";
+import { useLoaderData } from "react-router-dom";
 
 import "./indexRoom.css";
 
+export async function getRoomDatas({ params }) {
+  const res = await fetch(`${API_HOST}/roomDatas.json`);
+  const data = await res.json();
+  return params.roomId ? data.roomDatas[params.roomId - 1] : data.roomDatas;
+}
+
 export function PageRoom() {
   const [roomType, setType] = useState(1);
+  const roomData = useLoaderData();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,7 +36,7 @@ export function PageRoom() {
         ]}
       />
       <TopBtn />
-      <RoomList roomType={roomType} />
+      <RoomList roomType={roomType} roomData={roomData} />
     </>
   );
 }

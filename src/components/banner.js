@@ -1,44 +1,27 @@
-// import { useState } from "react";
+import { RiArrowDownSLine } from "react-icons/ri";
+import { useRef } from "react";
 import "./banner.css";
+import "animate.css";
 
 export function Banner({ title, intro }) {
-  // const optionNumArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  // const date = new Date();
-  // const year = date.getFullYear();
-  // const month =
-  //   date.getMonth() < 9 ? `0${date.getMonth() + 1}` : date.getMonth() + 1;
-  // const day = date.getDate() < 9 ? `0${date.getDate()}` : date.getDate();
-  // const [dayOfCheckIn, setCheckIn] = useState(`${year}-${month}-${day}`);
-  // const [dayOfCheckOut, setCheckOut] = useState(`${year}-${month}-${day + 2}`);
-  // const [numOfPeople, setPeople] = useState(1);
+  const bannerRef = useRef(null);
+
+  function scrollDown() {
+    window.scrollTo({
+      top: bannerRef.current.offsetHeight - 60,
+      behavior: "smooth",
+    });
+  }
+
   return (
-    <div className="banner">
+    <div className="banner" ref={bannerRef}>
       <div className="bannerTitle">
         <p>{title}</p>
         <p>- {intro} -</p>
       </div>
-      {/* <div>
-        <input
-          type="date"
-          value={dayOfCheckIn}
-          onChange={(e) => setCheckIn(e.target.value)}
-        />
-        <input
-          type="date"
-          value={dayOfCheckOut}
-          onChange={(e) => setCheckOut(e.target.value)}
-        />
-        <select value={numOfPeople} onChange={(e) => setPeople(e.target.value)}>
-          {optionNumArray.map((num, index) => {
-            return (
-              <option key={index} value={num}>
-                {num}
-              </option>
-            );
-          })}
-        </select>
-        <button>立即訂房</button>
-      </div> */}
+      <RiArrowDownSLine className="downBtn downBtn1" onClick={scrollDown} />
+      <RiArrowDownSLine className="downBtn downBtn2" onClick={scrollDown} />
+      <RiArrowDownSLine className="downBtn downBtn3" onClick={scrollDown} />
     </div>
   );
 }

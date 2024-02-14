@@ -1,0 +1,172 @@
+.graphics,
+.roomContent {
+    width: 55%;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphics * {
+    width: 100%;
+}
+
+.graphics h2 {
+    text-align: left;
+    color: #416788;
+}
+
+.slider {
+    cursor: grab;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+.thumbnail {
+    display: flex;
+}
+
+.graphics div ul li,
+.graphics div ul li p{
+    margin: 0;
+}
+
+.pics {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.pics li {
+    width: 35%;
+}
+
+.pics li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.icons {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icons li {
+    width: 30%;
+}
+
+.roomContent {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.roomTable h2 {
+    color: #416788;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.roomTable table {
+    border-collapse: collapse;
+    border: 1px solid #416788;
+    text-align: center;
+    font-size: 4.5rem;
+    color: #7389ae;
+}
+
+.roomTable td {
+  border: 1px solid #416788;
+  padding: 2rem 6rem;
+}
+
+.roomTable td p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.priceTable {
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border: 1px solid #416788;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7389ae;
+}
+
+.priceTable th,
+.priceTable td {
+    border: 1px solid #416788;
+    padding: 1rem 2rem;
+  }
+
+.checkNotice {
+    color: #7389ae;
+    font-size: 1.2rem;
+}
+
+.checkNotice ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.checkNotice ul li,
+.checkNotice ol li
+ {
+    display: list-item;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.checkNotice p {
+    color: #416788;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+@media(max-width: 480px) {
+    .graphics {
+        width: 100vw;
+    }
+    .thumbnail {
+        flex-direction: column;
+    }
+    .pics {
+        width: 100%;
+        justify-content: space-between;
+        gap: 1.2rem;
+    }
+    .pics li {
+        width: 50%;
+    }
+    .icons {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .roomContent {
+        width: 100%;
+    }
+    .roomTable table {
+        font-size: 3.5rem;
+    }
+    .roomTable td {
+        padding: 2rem 1rem;
+    }
+    .priceTable th,
+    .priceTable td {
+        padding: 1.2rem 0rem;
+        font-size: 1rem;
+    } 
+    .checkNotice {
+        font-size: 1rem;
+    }
+    .checkNotice p {
+        font-size: 1.3rem;
+    }   
+}

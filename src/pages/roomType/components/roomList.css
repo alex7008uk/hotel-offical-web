@@ -11,7 +11,7 @@ li p {
     font-size: 1.1rem;
 }
 
-li img {
+.imgRoom {
     width: 40rem;
     overflow: hidden;
     border-radius: 1rem;
@@ -20,7 +20,7 @@ li img {
     -webkit-user-drag: none;
 }
 
-li img:hover {
+.imgRoom:hover {
     opacity: 0.5;
 }
 

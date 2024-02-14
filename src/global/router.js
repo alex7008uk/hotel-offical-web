@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-
 import { Nav } from "../components/nav";
 import { PageIntro } from "../pages/introduction/indexIntro";
-import { PageRoom } from "../pages/roomType/indexRoom";
+import { PageRoom, getRoomDatas } from "../pages/roomType/indexRoom";
+import { RoomDetail } from "../pages/roomType/components/roomDetail";
 import { PageServices } from "../pages/services/indexServices";
 
 export const router = createBrowserRouter([
@@ -11,15 +11,21 @@ export const router = createBrowserRouter([
     element: <Nav />,
     children: [
       {
-        path: "/hotel-offical-web",
+        path: "hotel-offical-web",
         element: <PageIntro />,
       },
       {
-        path: "/roomType",
+        path: "roomType",
         element: <PageRoom />,
+        loader: getRoomDatas,
       },
       {
-        path: "/services",
+        path: "roomType/:roomId",
+        element: <RoomDetail />,
+        loader: getRoomDatas,
+      },
+      {
+        path: "services",
         element: <PageServices />,
       },
     ],
