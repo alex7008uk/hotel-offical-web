@@ -13,7 +13,6 @@ li p {
 
 .imgRoom {
     width: 40rem;
-    overflow: hidden;
     border-radius: 1rem;
     cursor: pointer;
     transition: 0.2s all ease-in-out;
@@ -65,4 +64,10 @@ li p {
 .roomBtn:hover {
     background-color: #81d2c7;
     color: #416788;
+}
+
+@media(max-width: 500px) {
+    .imgRoom {
+        width: 100vw;
+    }
 }

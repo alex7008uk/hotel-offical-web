@@ -8,21 +8,14 @@ export function RoomList({ roomType, roomData }) {
       ? roomData
       : roomData.filter((item) => item.type === roomType);
 
-  function linkTo(id) {
-    window.location.href = `./${id}`;
-  }
-
   return (
     <ul>
       {roomprocess.map((room) => {
         return (
           <li key={room.id}>
-            <img
-              src={room.src}
-              alt="pic"
-              className="imgRoom"
-              onClick={() => linkTo(room.id)}
-            />
+            <Link to={room.id}>
+              <img src={room.src} alt="pic" className="imgRoom" />
+            </Link>
             <div className="textArea">
               <h2>{room.name}</h2>
               <p className="cardList">

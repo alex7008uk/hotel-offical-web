@@ -66,6 +66,10 @@
     margin-bottom: 2rem;
 }
 
+.roomTable {
+    width: 100%;
+}
+
 .roomTable h2 {
     color: #416788;
     font-size: 1.5rem;
@@ -73,6 +77,7 @@
 }
 
 .roomTable table {
+    width: 100%;
     border-collapse: collapse;
     border: 1px solid #416788;
     text-align: center;
@@ -82,7 +87,7 @@
 
 .roomTable td {
   border: 1px solid #416788;
-  padding: 2rem 6rem;
+  padding: 2rem 0;
 }
 
 .roomTable td p {
@@ -130,7 +135,7 @@
     font-size: 1.4rem;
 }
 
-@media(max-width: 480px) {
+@media(max-width: 500px) {
     .graphics {
         width: 100vw;
     }

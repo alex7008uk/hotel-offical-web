@@ -30,7 +30,7 @@ export function Nav() {
             <NavLink to="services/">設施介紹</NavLink>
           </li>
           <li>
-            <NavLink to="services/">訂房系統</NavLink>
+            <NavLink to="#">訂房系統</NavLink>
           </li>
         </ul>
       </nav>
@@ -56,7 +56,7 @@ export function Nav() {
               </NavLink>
             </li>
             <li>
-              <NavLink to="services/" onClick={click}>
+              <NavLink to="#" onClick={click}>
                 訂房系統
               </NavLink>
             </li>

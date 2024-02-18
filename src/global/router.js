@@ -3,7 +3,8 @@ import { Nav } from "../components/nav";
 import { PageIntro } from "../pages/introduction/indexIntro";
 import { PageRoom, getRoomDatas } from "../pages/roomType/indexRoom";
 import { RoomDetail } from "../pages/roomType/components/roomDetail";
-import { PageServices } from "../pages/services/indexServices";
+import { PageServices, getServiceDatas } from "../pages/services/indexServices";
+import { ServiceDetail } from "../pages/services/components/serviceDetail";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,12 @@ export const router = createBrowserRouter([
       {
         path: "services",
         element: <PageServices />,
+        loader: getServiceDatas,
+      },
+      {
+        path: "services/:serviceId",
+        element: <ServiceDetail />,
+        loader: getServiceDatas,
       },
     ],
   },

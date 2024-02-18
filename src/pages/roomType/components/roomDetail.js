@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 
 // 自撰套件
@@ -26,6 +26,10 @@ export function RoomDetail() {
   const [contentType, setType] = useState(1);
   const sliderRef = useRef(null);
   const data = useLoaderData();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

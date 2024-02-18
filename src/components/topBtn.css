@@ -14,7 +14,7 @@
     color: #7389ae;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .btnTop {
         right: 1rem;
         bottom: 1rem;

@@ -1,0 +1,60 @@
+.ulService {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 5rem;
+    margin-top: 4rem;
+}
+
+.liService {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.imgService {
+    border-radius: 1rem;
+}
+
+.imgService:hover {
+    opacity: 0.5;
+}
+
+.textAreaService {
+    position: relative;
+    text-align: left;
+}
+
+.textAreaService h2,
+.textAreaService p {
+    padding-left: 3.5rem;
+}
+
+.verticalLine {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: -2%;
+    left: 5%;
+    border-left: 2px solid #b5bad0;
+}
+
+.moreService {
+    color: #7389ae;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.moreService:hover {
+    color: #81d2c7;
+    text-decoration: underline;
+}
+
+@media(max-width: 500px) {
+    .imgService {
+        width: 100vw;
+    }
+    .textAreaService {
+        width: 100vw;
+    }
+}
