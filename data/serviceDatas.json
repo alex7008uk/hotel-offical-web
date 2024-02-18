@@ -1,0 +1,59 @@
+{
+    "serviceDatas":[
+        {
+            "id": "1",
+            "type": 3,
+            "name": "酒吧",
+            "time": "17:30~01:00",
+            "price": "房客付費使用",
+            "src1": "/hotel-offical-web/images/services/bar1.png",
+            "src2": "/hotel-offical-web/images/services/bar2.png",
+            "intro": [
+                "每人低消NT$350+10%。(總容納數40位)", 
+                "最後點餐時間00:00，酒水00:30", 
+                "鐵板燒晚餐甜點時間每人限60分鐘，超過時間依酒吧消費規定"
+            ]
+        },
+        {
+            "id": "2",
+            "type": 3,
+            "name": "健身房",
+            "time": "07:30~22:00",
+            "price": "房客免費使用",
+            "src1": "/hotel-offical-web/images/services/gym1.png",
+            "src2": "/hotel-offical-web/images/services/gym2.png",
+            "intro": [
+                "十六歲以下孩童需成人陪同進入",
+                "請穿著適當之運動服飾及鞋子"
+            ]
+        },
+        {
+            "id": "3",
+            "type": 2,
+            "name": "游泳池",
+            "time": "07:30~22:00",
+            "price": "房客免費使用",
+            "src1": "/hotel-offical-web/images/services/pool1.png",
+            "src2": "/hotel-offical-web/images/services/pool2.png",
+            "intro": [
+                "泳池、戲水池需配戴泳帽；烤箱則不強制",
+                "考量每位賓客泳池之使用權益及安全性，使用浮具之尺寸長寬不得超過80cm（限泳池及戲水池使用)",
+                "水區內禁止飲食及飲酒；不得攜帶玻璃類(瓶)入內"
+            ]
+        },
+        {
+            "id": "4",
+            "type": 2,
+            "name": "溫泉",
+            "time": "09:00~21:00",
+            "price": "房客免費使用",
+            "src1": "/hotel-offical-web/images/services/spring1.png",
+            "src2": "/hotel-offical-web/images/services/spring2.png",
+            "intro": [
+                "敬請於泡湯前一日預訂，如須取消請於泡湯時間前二小時來電取消",
+                "每間湯屋限二位成人使用，第三人使用需另外加收費用，最多可加一位成人(13歲含以上)或兩位兒童(7-12歲)，未滿6歲之兒童免費",
+                "湯屋每次使用時間為120分鐘，逾時15分鐘以上將酌收湯屋一小時費用"
+            ]
+        }
+      ]
+}
