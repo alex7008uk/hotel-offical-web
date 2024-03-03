@@ -6,3 +6,9 @@
 .roomSearch * {
     width: 100%;
 }
+
+@media(max-width: 500px) {
+    .roomSearch {
+        width: 100%;
+    }
+}
