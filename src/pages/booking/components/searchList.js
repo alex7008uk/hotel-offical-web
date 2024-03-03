@@ -15,9 +15,9 @@ export function SearchList({
   const checkOutRef = useRef(null);
 
   async function searchRoom() {
-    const res = await fetch(`http://localhost:3000/reservations`);
-    const data = await res.json();
-    console.log(data);
+    // const res = await fetch(`http://localhost:3000/reservations`);
+    // const data = await res.json();
+    // console.log(data);
     setRoom({
       doubleRoom: true,
       doubleRoomJP: true,
