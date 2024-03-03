@@ -1,0 +1,41 @@
+.roomArea {
+    height: 100vh;
+}
+
+.roomArea ul li {
+    margin: 2.5rem 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 0.15rem solid transparent;
+}
+
+.roomArea ul li:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.roomArea ul li img {
+    width: auto;
+    height: 10rem;
+}
+
+.roomArea ul li div {
+    width: 50%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.roomArea ul li div h2 {
+    margin: 0;
+}
+
+@media(max-width: 500px) {
+    .roomArea ul li div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,84 @@
+.dateArea {
+    display: flex;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.picker {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem;
+    margin-top: 1rem;
+    background-color: #b5bad0;
+    color: #416788;
+    font-size: 1.5rem;
+    border-right: 2px solid #7389ae;
+}
+
+.picker p {
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+}
+
+.picker p .downarrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 9%;
+}
+
+.picker input {
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    border: 0;
+    outline: 0;
+    visibility: hidden;
+}
+
+.picker select {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: #416788;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.searchBtn {
+    height: 7rem;
+    margin-top: 1rem;
+    background-color: #416788;
+    font-size: 1.5rem;
+}
+
+.searchBtn button {
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    color: #81d2c7;
+    line-height: 7rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media(max-width: 500px) {
+    .dateArea {
+        flex-wrap: wrap;
+    }
+    .picker {
+        width: 100vw !important;
+        font-size: 1rem;
+        border: 0;
+    }
+    .picker select {
+        font-size: 1rem;
+    }
+    .searchBtn button {
+        font-size: 1rem;
+    }
+}

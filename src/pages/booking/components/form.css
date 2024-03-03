@@ -1,0 +1,119 @@
+.dataArea .shady {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.dataArea form {
+    width: 30vw;
+    height: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #e0e0e2;
+    border-radius: 0.7rem;
+    transform: translate(-50%,-50%);
+}
+
+.dataArea form .cancel {
+    text-align: right;
+    margin-bottom: 0;    
+}
+
+.dataArea form .cancelBtn {
+    width: 10%;
+    font-size: 2.5rem;
+    color: #416788;
+    cursor: pointer;
+}
+
+.dataArea form .cancelBtn:hover {
+    opacity: 0.5;
+}
+
+.dataArea form h2 {
+    text-align: center;
+    margin: 0;
+    color: #416788;
+}
+
+.dataArea form .bookingDetail {
+    margin: 1rem auto;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dataArea form .bookingDetail .info {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #7389ae;
+}
+
+.dataArea form .bookingDetail .info span {
+    font-weight: normal;
+    color: #416788;
+}
+
+.dataArea form .bookingDetail .info input {
+    display: inline;
+    width: 75%;
+    padding: 3px 5px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #416788;
+    background-color: rgba(181, 186, 208, 50%);
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+}
+
+.dataArea form .bookingDetail .info input:focus {
+    outline: none;
+    border: 2px solid #416788;
+}
+
+.dataArea form .bookingDetail .info textarea {
+    display: block;
+    width: 90%;
+    margin-top: 0.5rem;
+    padding: 3px 5px;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #416788;
+    background-color: rgba(181, 186, 208, 50%);
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    resize: none;
+}
+
+.dataArea form .bookingDetail .info textarea:focus {
+    outline: none;
+    border: 2px solid #416788;
+}
+
+.dataArea form .bookingDetail .bookBtn {
+    outline: none;
+    border: 0;
+    background-color: #416788;
+    border-radius: 5px;
+    width: 95%;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: #81d2c7;
+    cursor: pointer;
+}
+
+@media(max-width: 500px) {
+    .dataArea form {
+        width: 100vw;
+        overflow: scroll;
+    }
+    .dataArea form .bookingDetail .info input {
+        width: 90%;
+    }
+}

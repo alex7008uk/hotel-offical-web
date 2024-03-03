@@ -5,6 +5,7 @@ import { PageRoom, getRoomDatas } from "../pages/roomType/indexRoom";
 import { RoomDetail } from "../pages/roomType/components/roomDetail";
 import { PageServices, getServiceDatas } from "../pages/services/indexServices";
 import { ServiceDetail } from "../pages/services/components/serviceDetail";
+import { PageBooking } from "../pages/booking/indexBooking";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
         path: "services/:serviceId",
         element: <ServiceDetail />,
         loader: getServiceDatas,
+      },
+      {
+        path: "booking",
+        element: <PageBooking />,
       },
     ],
   },
