@@ -25,14 +25,12 @@ export function Form({
       note: note,
     };
     console.log(body);
-    if (body.name !== "" && body.tele !== "") {
-      const res = await fetch(`http://localhost:3000/reservations`, {
-        method: "POST",
-        body: JSON.stringify(body),
-      });
-      const data = await res.json();
-      console.log(data);
-    }
+    const res = await fetch(`http://localhost:3000/reservations`, {
+      method: "POST",
+      body: JSON.stringify(body),
+    });
+    const data = await res.json();
+    console.log(data);
   }
 
   return (
@@ -79,8 +77,15 @@ export function Form({
           <p>
             <button
               type="submit"
-              onClick={() => {
-                submit();
+              onClick={(e) => {
+                if (name !== "" && tele !== "") {
+                  e.preventDefault();
+                  submit();
+                  setFormShow(false);
+                  window.location.reload();
+                  window.scrollTo(0, 0);
+                  alert("訂房成功!");
+                }
               }}
               className="bookBtn"
             >

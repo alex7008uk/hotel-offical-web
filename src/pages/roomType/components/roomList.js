@@ -33,7 +33,9 @@ export function RoomList({ roomType, roomData }) {
                 </div>
               </p>
               <p>
-                <button className="roomBtn">BOOK NOW</button>
+                <Link to={"../booking"}>
+                  <button className="roomBtn">BOOK NOW</button>
+                </Link>
                 <Link to={room.id}>
                   <button className="roomBtn">MORE DETAIL</button>
                 </Link>
