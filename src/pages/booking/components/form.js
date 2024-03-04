@@ -82,7 +82,6 @@ export function Form({
                   e.preventDefault();
                   submit();
                   setFormShow(false);
-                  window.location.reload();
                   window.scrollTo(0, 0);
                   alert("訂房成功!");
                 }
